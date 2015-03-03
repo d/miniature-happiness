@@ -7,8 +7,14 @@ _main() {
 	softwareupdate --install --all
 
 	install_packages
+	install_vimfiles
 
 	hella_slow
+}
+
+install_vimfiles() {
+	git clone https://github.com/d/vimfiles ~/.vim
+	~/.vim/bin/setup.sh
 }
 
 install_packages() {
