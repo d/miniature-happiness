@@ -4,6 +4,14 @@ set -e -u
 set -x
 
 _main() {
+	softwareupdate --install --all
+
+	install_packages
+
+	hella_slow
+}
+
+install_packages() {
 	local readonly APPS=(
 		fish
 		git
@@ -16,16 +24,12 @@ _main() {
 		fluid
 	)
 
-	softwareupdate --install --all
-
 	brew install caskroom/cask/brew-cask
 	brew update
 
 	brew cask install "${CASK_APPS[@]}"
 
 	brew install "${APPS[@]}"
-
-	hella_slow
 }
 
 hella_slow() {
