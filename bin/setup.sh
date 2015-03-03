@@ -13,6 +13,10 @@ _main() {
 }
 
 install_vimfiles() {
+	# Assume .vim is colonized
+	if [[ -e ~/.vim ]]; then
+		return
+	fi
 	git clone https://github.com/d/vimfiles ~/.vim
 	~/.vim/bin/setup.sh
 }
