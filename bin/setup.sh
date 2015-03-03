@@ -8,8 +8,16 @@ _main() {
 
 	install_packages
 	install_vimfiles
+	install_fishfiles
 
 	hella_slow
+}
+
+install_fishfiles() {
+	if [[ -e ~/.config/fish ]]; then
+		return
+	fi
+	git clone https://github.com/d/fishfiles ~/.config/fish
 }
 
 install_vimfiles() {
