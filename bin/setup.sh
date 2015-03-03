@@ -3,13 +3,32 @@
 set -e -u
 set -x
 
-softwareupdate --install --all
+_main() {
+	local readonly APPS=(
+		fish
+		git
+	)
+	local readonly CASK_APPS=(
+		iterm2
+		p4v
+		macvim
+		fluid
+	)
 
-brew install caskroom/cask/brew-cask
-brew update
+	softwareupdate --install --all
 
-brew cask install iterm2 p4v macvim fluid
+	brew install caskroom/cask/brew-cask
+	brew update
 
-brew install fish git
+	brew cask install "${CASK_APPS[@]}"
 
-brew cask install eclipse-cpp
+	brew install "${APPS[@]}"
+
+	hella_slow
+}
+
+hella_slow() {
+	brew cask install eclipse-cpp
+}
+
+_main
