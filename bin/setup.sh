@@ -43,6 +43,7 @@ install_packages() {
 		p4v
 		macvim
 		fluid
+		vagrant
 	)
 
 	brew install caskroom/cask/brew-cask
