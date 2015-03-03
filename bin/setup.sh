@@ -35,6 +35,8 @@ install_packages() {
 		git
 		cmake
 		p7zip
+		ctags
+		cscope
 	)
 	local readonly CASK_APPS=(
 		iterm2
