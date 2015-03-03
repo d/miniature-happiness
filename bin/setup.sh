@@ -7,6 +7,7 @@ _main() {
 	local readonly APPS=(
 		fish
 		git
+		cmake
 	)
 	local readonly CASK_APPS=(
 		iterm2
