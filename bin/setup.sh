@@ -34,6 +34,7 @@ install_packages() {
 		fish
 		git
 		cmake
+		p7zip
 	)
 	local readonly CASK_APPS=(
 		iterm2
