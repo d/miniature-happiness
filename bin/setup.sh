@@ -37,6 +37,7 @@ install_packages() {
 		p7zip
 		ctags
 		cscope
+		homebrew/binary/perforce
 	)
 	local readonly CASK_APPS=(
 		iterm2
@@ -55,7 +56,11 @@ install_packages() {
 }
 
 hella_slow() {
-	brew cask install eclipse-cpp
+	local readonly CASK_APPS=(
+		eclipse-cpp
+		pycharm-ce
+	)
+	brew cask install "${CASK_APPS[@]}"
 }
 
 _main
