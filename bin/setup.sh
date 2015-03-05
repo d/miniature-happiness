@@ -45,6 +45,7 @@ install_packages() {
 		macvim
 		fluid
 		vagrant
+		google-chrome
 	)
 
 	brew install caskroom/cask/brew-cask
