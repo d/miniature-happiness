@@ -46,6 +46,7 @@ install_packages() {
 		fluid
 		vagrant
 		google-chrome
+		java
 	)
 
 	brew install caskroom/cask/brew-cask
