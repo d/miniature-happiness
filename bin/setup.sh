@@ -58,8 +58,9 @@ install_packages() {
 
 hella_slow() {
 	local readonly CASK_APPS=(
-		eclipse-cpp
 		pycharm
+		intellij-idea
+		eclipse-cpp
 	)
 	brew cask install "${CASK_APPS[@]}"
 }
