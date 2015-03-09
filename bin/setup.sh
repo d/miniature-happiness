@@ -37,6 +37,7 @@ install_packages() {
 		p7zip
 		ctags
 		cscope
+		docker
 		homebrew/binary/perforce
 	)
 	local readonly CASK_APPS=(
