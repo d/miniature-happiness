@@ -45,6 +45,7 @@ install_packages() {
 		p4v
 		macvim
 		fluid
+		keycastr
 		vagrant
 		google-chrome
 		java
