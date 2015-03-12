@@ -38,6 +38,8 @@ install_packages() {
 		ctags
 		cscope
 		docker
+		boot2docker
+		hub
 		homebrew/binary/perforce
 	)
 	local readonly CASK_APPS=(
@@ -48,6 +50,7 @@ install_packages() {
 		keycastr
 		vagrant
 		google-chrome
+		virtualbox
 		java
 	)
 
