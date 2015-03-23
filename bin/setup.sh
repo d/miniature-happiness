@@ -67,6 +67,7 @@ hella_slow() {
 		pycharm
 		intellij-idea
 		eclipse-cpp
+		clion-eap
 	)
 	brew cask install "${CASK_APPS[@]}"
 }
