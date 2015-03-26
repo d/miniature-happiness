@@ -39,6 +39,8 @@ install_packages() {
 		cscope
 		docker
 		boot2docker
+		docker-machine
+		ssh-copy-id
 		hub
 		homebrew/binary/perforce
 	)
@@ -52,6 +54,7 @@ install_packages() {
 		google-chrome
 		virtualbox
 		java
+		packer
 	)
 
 	brew install caskroom/cask/brew-cask
