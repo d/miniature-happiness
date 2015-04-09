@@ -42,6 +42,7 @@ install_packages() {
 		docker-machine
 		ssh-copy-id
 		hub
+		autoconf
 		homebrew/binary/perforce
 	)
 	local readonly CASK_APPS=(
