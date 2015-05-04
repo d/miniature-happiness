@@ -42,6 +42,8 @@ install_packages() {
 		docker-machine
 		ssh-copy-id
 		hub
+		rbenv
+		ruby-build
 		autoconf
 		homebrew/binary/perforce
 	)
