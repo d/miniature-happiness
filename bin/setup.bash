@@ -80,4 +80,4 @@ hella_slow() {
 	brew cask install "${CASK_APPS[@]}"
 }
 
-_main
+_main "$@"
