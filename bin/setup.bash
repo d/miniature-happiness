@@ -6,11 +6,16 @@ set -x
 _main() {
 	softwareupdate --install --all
 
+	install_brew
 	install_packages
 	install_vimfiles
 	install_fishfiles
 
 	hella_slow
+}
+
+install_brew() {
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 install_fishfiles() {
