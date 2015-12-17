@@ -6,12 +6,17 @@ set -x
 _main() {
 	softwareupdate --install --all
 
+	install_git_pair
 	install_brew
 	install_packages
 	install_vimfiles
 	install_fishfiles
 
 	hella_slow
+}
+
+install_git_pair() {
+	sudo env RBENV_VERSION=system gem install pivotal_git_scripts
 }
 
 install_brew() {
