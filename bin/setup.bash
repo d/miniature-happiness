@@ -42,7 +42,7 @@ install_vimfiles() {
 }
 
 install_packages() {
-	local readonly APPS=(
+	readonly local APPS=(
 		fish
 		git
 		cmake
@@ -59,7 +59,7 @@ install_packages() {
 		autoconf
 		homebrew/binary/perforce
 	)
-	local readonly CASK_APPS=(
+	readonly local CASK_APPS=(
 		iterm2
 		p4v
 		macvim
@@ -82,7 +82,7 @@ install_packages() {
 }
 
 hella_slow() {
-	local readonly CASK_APPS=(
+	readonly local CASK_APPS=(
 		pycharm
 		intellij-idea
 		eclipse-cpp
