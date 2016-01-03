@@ -77,7 +77,7 @@ install_google_signing_key() {
 	if ! gpg --keyring /etc/apt/trusted.gpg --list-key "${google_key_id}"; then
 		wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 	fi
-	echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list > /dev/null
+	echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome-unstable.list > /dev/null
 }
 
 _main "$@"
