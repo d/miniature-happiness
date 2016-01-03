@@ -5,10 +5,17 @@ set -x
 
 _main() {
 	install_google_signing_key
+	add_gnome_encfs_archive
 	install_packages
 	install_git_pair
 	install_vimfiles
 	install_fishfiles
+}
+
+add_gnome_encfs_archive() {
+	if ! apt-get -sq install -yq gnome-encfs-manager; then
+		sudo add-apt-repository ppa:gencfsm/ppa
+	fi
 }
 
 install_git_pair() {
@@ -53,6 +60,8 @@ install_packages() {
 		screen-
 
 		indicator-multiload
+
+		gnome-encfs-manager
 
 		google-chrome-unstable
 	)
