@@ -61,6 +61,9 @@ install_packages() {
 
 		indicator-multiload
 
+		exfat-utils
+
+		nautilus-dropbox
 		gnome-encfs-manager
 
 		google-chrome-unstable
