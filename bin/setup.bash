@@ -72,7 +72,6 @@ install_packages() {
 		packer
 	)
 
-	brew install caskroom/cask/brew-cask
 	brew update
 
 	brew cask install "${CASK_APPS[@]}"
