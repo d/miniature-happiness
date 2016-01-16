@@ -58,6 +58,8 @@ install_packages() {
 		ruby-build
 		autoconf
 		homebrew/binary/perforce
+		node
+		go
 	)
 	readonly local CASK_APPS=(
 		iterm2
