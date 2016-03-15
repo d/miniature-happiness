@@ -60,6 +60,8 @@ install_packages() {
 		homebrew/binary/perforce
 		node
 		go
+		wget
+		ccache
 	)
 	readonly local CASK_APPS=(
 		iterm2
