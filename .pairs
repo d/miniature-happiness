@@ -1,0 +1,7 @@
+pairs:
+  jz: Jesse Zhang; jzhang
+  vr: Venkatesh Raghavan; vraghavan
+email:
+  prefix: pair
+  domain: pivotal.io
+  no_solo_prefix: true
