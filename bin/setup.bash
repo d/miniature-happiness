@@ -57,7 +57,6 @@ install_packages() {
 		rbenv
 		ruby-build
 		autoconf
-		homebrew/binary/perforce
 		node
 		go
 		wget
@@ -81,8 +80,6 @@ install_packages() {
 	brew cask install "${CASK_APPS[@]}"
 
 	brew install "${APPS[@]}"
-
-	brew untap homebrew/binary
 }
 
 hella_slow() {
