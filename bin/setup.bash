@@ -47,6 +47,7 @@ install_packages() {
 		git
 		cmake
 		p7zip
+		ninja
 		ctags
 		cscope
 		docker
