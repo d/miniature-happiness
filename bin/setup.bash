@@ -15,8 +15,18 @@ _main() {
 	hella_slow
 }
 
+gem_installed() {
+	env RBENV_VERSION=system gem which "$1" > /dev/null
+}
+
+install_gem() {
+	sudo env RBENV_VERSION=system gem install "$1"
+}
+
 install_git_pair() {
-	sudo env RBENV_VERSION=system gem install pivotal_git_scripts
+	if ! gem_installed pivotal_git_scripts/git_pair ; then
+		install_gem pivotal_git_scripts
+	fi
 }
 
 install_brew() {
