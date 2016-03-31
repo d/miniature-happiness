@@ -79,6 +79,7 @@ install_packages() {
 		macvim
 		fluid
 		keycastr
+		flycut
 		vagrant
 		google-chrome
 		virtualbox
