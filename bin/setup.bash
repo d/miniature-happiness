@@ -9,10 +9,20 @@ _main() {
 	install_git_pair
 	install_brew
 	install_packages
+	install_python_packages
 	install_vimfiles
 	install_fishfiles
 
 	hella_slow
+}
+
+install_python_packages() {
+	local packages=(
+		psutil
+		lockfile
+		paramiko
+	)
+	pip install --user "${packages[@]}"
 }
 
 gem_installed() {
