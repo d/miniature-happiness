@@ -73,6 +73,12 @@ install_packages() {
 		wget
 		ccache
 	)
+
+	local LIBS=(
+		libevent
+		libyaml
+	)
+
 	readonly local CASK_APPS=(
 		iterm2
 		p4v
@@ -91,7 +97,7 @@ install_packages() {
 
 	brew cask install "${CASK_APPS[@]}"
 
-	brew install "${APPS[@]}"
+	brew install "${APPS[@]}" "${LIBS[@]}"
 }
 
 hella_slow() {
