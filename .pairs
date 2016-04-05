@@ -1,6 +1,8 @@
 pairs:
   jz: Jesse Zhang; jzhang
   vr: Venkatesh Raghavan; vraghavan
+  jmf: Jacob Frank; jfrank
+  xz: Xin Zhang; xzhang
 email:
   prefix: pair
   domain: pivotal.io
