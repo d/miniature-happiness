@@ -9,11 +9,18 @@ _main() {
 	install_git_pair
 	install_brew
 	install_packages
+	install_pip
 	install_python_packages
 	install_vimfiles
 	install_fishfiles
 
 	hella_slow
+}
+
+install_pip() {
+	if ! which pip; then
+		sudo easy_install pip
+	fi
 }
 
 install_python_packages() {
