@@ -4,7 +4,7 @@ set -e -u
 set -x
 
 _main() {
-	softwareupdate --install --all
+	softwareupdate --install --recommended
 
 	install_git_pair
 	install_brew
