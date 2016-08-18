@@ -77,9 +77,6 @@ install_packages() {
 		ninja
 		ctags
 		cscope
-		docker
-		boot2docker
-		docker-machine
 		ssh-copy-id
 		hub
 		rbenv
@@ -98,7 +95,7 @@ install_packages() {
 
 	readonly local CASK_APPS=(
 		iterm2
-		p4v
+		docker
 		macvim
 		fluid
 		keycastr
