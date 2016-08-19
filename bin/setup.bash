@@ -104,7 +104,6 @@ install_packages() {
 		google-chrome
 		virtualbox
 		java
-		packer
 	)
 
 	brew update
