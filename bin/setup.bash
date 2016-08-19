@@ -104,6 +104,7 @@ install_packages() {
 		google-chrome
 		virtualbox
 		java
+		screenhero
 	)
 
 	brew update
