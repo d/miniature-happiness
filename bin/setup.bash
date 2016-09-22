@@ -86,6 +86,7 @@ install_packages() {
 		go
 		wget
 		ccache
+		gdb
 	)
 
 	local LIBS=(
