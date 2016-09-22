@@ -105,6 +105,7 @@ install_packages() {
 		virtualbox
 		java
 		screenhero
+		shiftit
 	)
 
 	brew update
