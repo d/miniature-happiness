@@ -86,6 +86,7 @@ install_packages() {
 		go
 		wget
 		ccache
+		emacs
 	)
 
 	local LIBS=(
