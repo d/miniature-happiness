@@ -86,6 +86,7 @@ install_packages() {
 		go
 		wget
 		ccache
+		gdb
 	)
 
 	local LIBS=(
@@ -105,6 +106,7 @@ install_packages() {
 		virtualbox
 		java
 		screenhero
+		shiftit
 	)
 
 	brew update
