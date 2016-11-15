@@ -86,6 +86,8 @@ install_packages() {
 		go
 		wget
 		ccache
+		docker-compose
+		docker-machine
 	)
 
 	local LIBS=(
@@ -95,7 +97,6 @@ install_packages() {
 
 	readonly local CASK_APPS=(
 		iterm2
-		docker
 		macvim
 		fluid
 		keycastr
