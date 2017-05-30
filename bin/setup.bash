@@ -90,6 +90,7 @@ install_packages() {
 		docker-machine
 		parallel
 		shellcheck
+		apr
 	)
 
 	local LIBS=(
