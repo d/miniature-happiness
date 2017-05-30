@@ -88,6 +88,8 @@ install_packages() {
 		ccache
 		docker-compose
 		docker-machine
+		parallel
+		shellcheck
 	)
 
 	local LIBS=(
