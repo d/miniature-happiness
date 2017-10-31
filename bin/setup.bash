@@ -104,9 +104,7 @@ install_packages() {
 		fluid
 		keycastr
 		flycut
-		vagrant
 		google-chrome
-		virtualbox
 		java
 		shiftit
 	)
