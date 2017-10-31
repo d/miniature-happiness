@@ -108,7 +108,6 @@ install_packages() {
 		google-chrome
 		virtualbox
 		java
-		screenhero
 		shiftit
 	)
 
