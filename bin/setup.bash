@@ -14,6 +14,7 @@ _main() {
 	install_vimfiles
 	install_fishfiles
 
+	git_config
 	hella_slow
 }
 
@@ -114,6 +115,11 @@ install_packages() {
 	brew cask install "${CASK_APPS[@]}"
 
 	brew install "${APPS[@]}" "${LIBS[@]}"
+}
+
+git_config() {
+	git config --global submodule.fetchJobs 0
+	git config --global protocol.version 2
 }
 
 hella_slow() {
