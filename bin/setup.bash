@@ -74,8 +74,10 @@ install_packages() {
 		fish
 		git
 		cmake
+		make
 		p7zip
 		ninja
+		bear
 		ctags
 		cscope
 		ssh-copy-id
@@ -83,20 +85,24 @@ install_packages() {
 		rbenv
 		ruby-build
 		autoconf
-		node
-		go
 		wget
 		ccache
-		docker-compose
-		docker-machine
 		parallel
 		shellcheck
-		apr
+		git-duet/tap/git-duet
+		direnv
+		tmux
+		watch
+		findutils
+		coreutils
 	)
 
 	local LIBS=(
 		libevent
 		libyaml
+		zstd
+		readline
+		apr
 	)
 
 	readonly local CASK_APPS=(
@@ -106,8 +112,9 @@ install_packages() {
 		keycastr
 		flycut
 		google-chrome
-		java
 		shiftit
+		homebrew/cask-versions/docker-edge
+		zoomus
 	)
 
 	brew update
