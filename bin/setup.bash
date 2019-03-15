@@ -18,7 +18,7 @@ _main() {
 }
 
 install_pip() {
-	if ! which pip; then
+	if ! command -v pip; then
 		sudo easy_install pip
 	fi
 }
@@ -47,7 +47,7 @@ install_git_pair() {
 }
 
 install_brew() {
-	if ! which brew; then
+	if ! command -v brew; then
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi
 }
