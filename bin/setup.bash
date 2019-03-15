@@ -15,7 +15,6 @@ _main() {
 	install_fishfiles
 
 	git_config
-	hella_slow
 }
 
 install_pip() {
@@ -129,14 +128,5 @@ git_config() {
 	git config --global protocol.version 2
 }
 
-hella_slow() {
-	readonly local CASK_APPS=(
-		pycharm
-		intellij-idea
-		eclipse-cpp
-		clion
-	)
-	brew cask install "${CASK_APPS[@]}"
-}
 
 _main "$@"
