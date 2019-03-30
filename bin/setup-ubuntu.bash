@@ -5,7 +5,7 @@ set -x
 
 _main() {
 	install_google_signing_key
-	add_gnome_encfs_archive
+	# add_gnome_encfs_archive
 	install_packages
 	install_git_pair
 	install_vimfiles
@@ -36,7 +36,8 @@ install_vimfiles() {
 	if [[ -e ~/.vim ]]; then
 		return
 	fi
-	git clone https://github.com/d/vimfiles ~/.vim
+	git clone https://github.com/d/vimfiles ~/src/d/vimfiles
+	ln -svTf ~/src/d/vimfiles ~/.vim
 	~/.vim/bin/setup.sh
 }
 
@@ -63,8 +64,8 @@ install_packages() {
 
 		exfat-utils
 
-		nautilus-dropbox
-		gnome-encfs-manager
+		# nautilus-dropbox
+		# gnome-encfs-manager
 
 		google-chrome-unstable
 	)
@@ -73,7 +74,7 @@ install_packages() {
 }
 
 install_google_signing_key() {
-	readonly local google_key_id=7fac5991
+	readonly local google_key_id=7721F63BD38B4796
 	if ! gpg --keyring /etc/apt/trusted.gpg --list-key "${google_key_id}"; then
 		wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 	fi
